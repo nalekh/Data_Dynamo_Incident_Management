@@ -1,0 +1,30 @@
+name: Bug Report
+description: Use this form to report a bug in the system.
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "### Please fill out the form below to report a bug."
+  - type: input
+    id: short_description
+    attributes:
+      label: "Short Description"
+      description: "Provide a brief summary of the bug."
+      placeholder: "e.g., 'Login button not working'"
+  - type: textarea
+    id: details
+    attributes:
+      label: "Detailed Description"
+      description: "Provide steps to reproduce, expected behavior, and actual behavior."
+      placeholder: "Describe the issue in detail..."
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severity"
+      description: "Choose the severity of the bug."
+      options:
+        - "Low"
+        - "Medium"
+        - "High"
+        - "Critical"
